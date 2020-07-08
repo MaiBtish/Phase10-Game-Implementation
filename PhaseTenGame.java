@@ -320,16 +320,28 @@ public class PhaseTenGame extends Application {
 						if (button == MouseButton.SECONDARY) { //add cards to set of 3
 							if (card.getId().equals("14")) //skip card
 								e.consume();
-							else
-								p1Set.getChildren().add(card);
+							else {
+								try {
+									p1Set.getChildren().add(card);
+								}
+								catch(IllegalArgumentException ex) {
+									e.consume();
+								}
+							}
 						}
 					}
 					if (p1Set_1.getChildren().size() < 3) {
-						if (button == MouseButton.PRIMARY) {//add cards to run of 4
+						if (button == MouseButton.PRIMARY) {
 							if (card.getId().equals("14")) //skip card
 								e.consume();
-							else
-								p1Set_1.getChildren().add(card);
+							else {
+								try {
+									p1Set_1.getChildren().add(card);
+								}
+								catch(IllegalArgumentException ex) {
+									e.consume();
+								}
+							}
 						}
 					}
 				});
@@ -348,17 +360,28 @@ public class PhaseTenGame extends Application {
 						if (button == MouseButton.SECONDARY) { //add cards to set of 3
 							if (card.getId().equals("14")) //skip card
 								e.consume();
-							else
-								p2Set.getChildren().add(card);
+							else {
+								try {
+									p2Set.getChildren().add(card);
+								}
+								catch(IllegalArgumentException ex) {
+									e.consume();
+								}
+							}
 						}
 					}
 
 					if (p2Set_1.getChildren().size() < 3) {
-						if (button == MouseButton.PRIMARY) {//add cards to run of 4
+						if (button == MouseButton.PRIMARY) {
 							if (card.getId().equals("14")) //skip card
 								e.consume();
-							else
-								p2Set_1.getChildren().add(card);
+							else {
+								try {
+									p2Set_1.getChildren().add(card);
+								}
+								catch(IllegalArgumentException ex) {
+									e.consume();
+								}
 						}
 					}
 				});
