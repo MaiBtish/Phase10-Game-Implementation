@@ -1,6 +1,6 @@
 # Phase10 Game Implementation
 
-Authors: Nada Abughazalah and Mai Btish
+Authors: Nada Abughazalah and [MaiBtish](https://github.com/MaiBtish)
 
 As the course project for the Advanced Programming (EE364) course 
 
